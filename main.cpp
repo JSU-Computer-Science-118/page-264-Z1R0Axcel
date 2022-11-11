@@ -1,4 +1,4 @@
-//Luke McClinton J00916724 11/08/22
+// Luke McClinton J00916724 11/08/22
 #include <cmath>
 #include <iomanip>
 #include <iostream>
@@ -8,31 +8,31 @@ int main() {
   int num;
   cout << "Enter an integer between 1 and 1000: ";
   cin >> num;
-  if (num % 2 == 0 || num % 3 == 0 || num % 5 == 0 || num % 8 == 0 ||
-      num % 11 == 0 || num % 13 == 0 || num % 17 == 0 || num % 19 == 0 ||
-      num % 23 == 0 || num % 29 == 0 || num % 31 == 0) {
+  if (num % 2 == 0 && num !=2 || num % 3 == 0 && num !=3 || num % 5 == 0 && num !=5 || num % 8 == 0 && num !=8 ||
+      num % 11 == 0 && num !=11 || num % 13 == 0 && num !=13 || num % 17 == 0 && num !=17 || num % 19 == 0 && num !=19 ||
+      num % 23 == 0 && num !=23 || num % 29 == 0 && num !=29 || num % 31 == 0 && num !=31) {
     if (num % 2 == 0)
-      cout << "Divisible by 2" << endl;
+      cout << "2 ";
     if (num % 3 == 0)
-      cout << "Divisible by 3" << endl;
+      cout << "3 ";
     if (num % 5 == 0)
-      cout << "Divisible by 5" << endl;
+      cout << "5 ";
     if (num % 7 == 0)
-      cout << "Divisible by 7" << endl;
+      cout << "7 ";
     if (num % 11 == 0)
-      cout << "Divisible by 11" << endl;
+      cout << "11 ";
     if (num % 13 == 0)
-      cout << "Divisible by 13" << endl;
+      cout << "13 ";
     if (num % 17 == 0)
-      cout << "Divisible by 17" << endl;
+      cout << "17 ";
     if (num % 19 == 0)
-      cout << "Divisible by 19" << endl;
+      cout << "19 ";
     if (num % 23 == 0)
-      cout << "Divisible by 23" << endl;
+      cout << "23 ";
     if (num % 29 == 0)
-      cout << "Divisible by 29" << endl;
+      cout << "29 ";
     if (num % 31 == 0)
-      cout << "Divisible by 31" << endl;
+      cout << "31";
   } else
-    cout << "The number is a prime." << endl;
-  }
+  cout << "The number " << num << " is prime!" << endl;
+}
