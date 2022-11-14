@@ -33,5 +33,5 @@ int main() {
     if (num % 31 == 0)
       cout << "31";
   } else
-  cout << "The number " << num << " is prime!" << endl;
+  cout << "Prime " << num << endl;
 }
